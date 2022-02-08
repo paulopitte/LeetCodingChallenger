@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Easy", "Easy", "{3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Medium", "Medium", "{94C630FD-C4E3-44A6-8F7E-682BF38B1C85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hard", "Hard", "{F1AA74D2-2680-4759-B702-88FB5D02482E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddDigits", "Easy\AddDigits\AddDigits.csproj", "{4BC2402F-D302-4C94-BAD2-B0438E575DD8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwoSum", "Easy\TwoSum\TwoSum.csproj", "{E8CCAF12-8D84-411C-8340-F791A89EECAD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoveDuplicatesFromSortedArray", "Easy\RemoveDuplicatesFromSortedArray\RemoveDuplicatesFromSortedArray.csproj", "{0E653260-6817-4D68-ADE8-B4A24D9B6191}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BC2402F-D302-4C94-BAD2-B0438E575DD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC2402F-D302-4C94-BAD2-B0438E575DD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BC2402F-D302-4C94-BAD2-B0438E575DD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC2402F-D302-4C94-BAD2-B0438E575DD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8CCAF12-8D84-411C-8340-F791A89EECAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8CCAF12-8D84-411C-8340-F791A89EECAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8CCAF12-8D84-411C-8340-F791A89EECAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8CCAF12-8D84-411C-8340-F791A89EECAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E653260-6817-4D68-ADE8-B4A24D9B6191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E653260-6817-4D68-ADE8-B4A24D9B6191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E653260-6817-4D68-ADE8-B4A24D9B6191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E653260-6817-4D68-ADE8-B4A24D9B6191}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4BC2402F-D302-4C94-BAD2-B0438E575DD8} = {3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}
+		{E8CCAF12-8D84-411C-8340-F791A89EECAD} = {3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}
+		{0E653260-6817-4D68-ADE8-B4A24D9B6191} = {3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {668FBAF8-0760-44A0-AD46-B89040394F0F}
+	EndGlobalSection
+EndGlobal
