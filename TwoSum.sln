@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoSum", "TwoSum\TwoSum.csproj", "{E0015724-6476-4E27-947C-8F2BA8B635C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwoSum", "TwoSum\TwoSum.csproj", "{E0015724-6476-4E27-947C-8F2BA8B635C4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Easy", "Easy", "{3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Medium", "Medium", "{94C630FD-C4E3-44A6-8F7E-682BF38B1C85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hard", "Hard", "{F1AA74D2-2680-4759-B702-88FB5D02482E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddDigits", "..\AddDigits\AddDigits.csproj", "{2DF11958-D3E4-4676-9B5F-657836BF173A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +23,17 @@ Global
 		{E0015724-6476-4E27-947C-8F2BA8B635C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0015724-6476-4E27-947C-8F2BA8B635C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0015724-6476-4E27-947C-8F2BA8B635C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DF11958-D3E4-4676-9B5F-657836BF173A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DF11958-D3E4-4676-9B5F-657836BF173A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DF11958-D3E4-4676-9B5F-657836BF173A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DF11958-D3E4-4676-9B5F-657836BF173A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E0015724-6476-4E27-947C-8F2BA8B635C4} = {3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}
+		{2DF11958-D3E4-4676-9B5F-657836BF173A} = {3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {668FBAF8-0760-44A0-AD46-B89040394F0F}

@@ -10,8 +10,25 @@ namespace TwoSum
         static void Main(string[] args)
         {
             Console.WriteLine("Two Sum!");
+  
+            var returnAddDigits = AddDigits(38);
+
+            var returnRemoveDuplicates = RemoveDuplicates(new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 });
+
+
+          
+
+            var valor = CountChars("aaabbcccc");
+
+            var xx = maximumPages(new SinglyLinkedListNode(4));
+
+
+
+
+
 
             var ret = TwoSum(new int[] { 7, 2, 13, 11 }, 9);
+
 
 
             string[] repo = new[] { "Carro", "Caro", "Carripa", "Mouse", "Teclado", "Tech", "Tecla" };
@@ -21,6 +38,71 @@ namespace TwoSum
             searchSuggestions(repo, query);
         }
 
+
+        private static long CountChars(String password)
+        {
+            if (password == null || password.Length == 0) return 0;
+
+            long response = 0L;
+            for (int indexPass = 1; indexPass <= password.Length; indexPass++)
+            {
+                List<string> charPass = new();
+                var duplicate = 0;
+                for (int indexChar = indexPass - 1; indexChar >= 0; indexChar--)
+                {
+                    var unitChar = password[indexChar].ToString();
+                    if (charPass.Contains(unitChar))
+                        duplicate++;
+
+                    charPass.Add(unitChar);
+                    response += (indexPass - indexChar - duplicate);
+                }
+            }
+            return response;
+        }
+
+        public static int maximumPages(SinglyLinkedListNode head)
+        {
+            SinglyLinkedListNode fast = head;
+            SinglyLinkedListNode slow = head;
+            SinglyLinkedListNode current = head;
+            while (fast != null && fast.next != null)
+            {
+                slow = slow.next;
+                fast = fast.next.next;
+            }
+            slow = reverse(slow);
+            int max = int.MinValue;
+            while (slow != null)
+            {
+                int sum = slow.data + current.data;
+                if (max < sum)
+                {
+                    max = sum;
+                }
+                slow = slow.next;
+                current = current.next;
+            }
+            return max;
+        }
+
+        public static SinglyLinkedListNode reverse(SinglyLinkedListNode head)
+        {
+
+            SinglyLinkedListNode prev = null;
+            SinglyLinkedListNode next = head;
+            SinglyLinkedListNode current = head;
+
+            while (current != null)
+            {
+                next = next.next;
+                current.next = prev;
+                prev = current;
+                current = next;
+            }
+
+            return prev;
+        }
 
 
 
@@ -35,9 +117,82 @@ namespace TwoSum
             return null;
         }
 
+        //public static int RemoveDuplicates(int[] nums)
+        //{
+        //    int i = 0;
+
+        //    foreach (var item in nums)
+        //    {
+        //        if(i <1 || item > nums[i - 1])
+        //        {
+        //            nums[i] = item;
+        //            i++;                   
+        //        }
+
+        //    }
+        //    return i;
+        //}
+
+        // metodo 1
+        //public static int RemoveDuplicates(int[] nums)
+        //{
+        //    int i = 0;
+        //    foreach (int item in nums.Where(item => i < 1 || item > nums[i - 1]))
+        //    {
+        //        nums[i] = item;
+        //        i++;
+        //    }
+        //    return i;
+        //}
+
+        //desafio  array II
+        public static int RemoveDuplicates(int[] nums)
+        {
+            int count = 0;
+            foreach (int item in from item in nums
+                                 where count < 2 || item > nums[count - 2]
+                                 select item)
+            {
+                nums[count] = item;
+                count++;
+            }
+            return count;
+        }
 
 
 
+        public static int AddDigits(int num)
+        {           
+
+            while (num > 9)
+            {
+                int result = 0;
+                while (num > 0)
+                {
+                    result += num % 10;
+                    num /= 10;
+                }
+                num = result;
+            }
+
+            return num;
+        }
+
+        //public static int AddDigits(int num)
+        //{
+        //    while (num > 9)
+        //    {
+        //        int res = 0;
+        //        while (num > 0)
+        //        {
+        //            res += num % 10;
+        //            num /= 10;
+        //        }
+        //        num = res;
+        //    }
+
+        //    return num;
+        //}
         public static void searchSuggestions(string[] repository, string customerQuery)
         {
 
@@ -73,8 +228,6 @@ namespace TwoSum
 
             #endregion
         }
-
-
 
 
 
