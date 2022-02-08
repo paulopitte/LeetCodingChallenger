@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoveDuplicatesFromSortedA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveDuplicatesFromSortedArrayII", "Medium\RemoveDuplicatesFromSortedArrayII\RemoveDuplicatesFromSortedArrayII.csproj", "{B15BC350-511E-442E-B3CD-7C26CE97D811}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonTest", "AmazonTest\AmazonTest\AmazonTest.csproj", "{60AB7452-DDA5-4AAD-87CA-81151455B3EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B15BC350-511E-442E-B3CD-7C26CE97D811}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B15BC350-511E-442E-B3CD-7C26CE97D811}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B15BC350-511E-442E-B3CD-7C26CE97D811}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60AB7452-DDA5-4AAD-87CA-81151455B3EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60AB7452-DDA5-4AAD-87CA-81151455B3EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60AB7452-DDA5-4AAD-87CA-81151455B3EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60AB7452-DDA5-4AAD-87CA-81151455B3EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{E8CCAF12-8D84-411C-8340-F791A89EECAD} = {3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}
 		{0E653260-6817-4D68-ADE8-B4A24D9B6191} = {3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}
 		{B15BC350-511E-442E-B3CD-7C26CE97D811} = {94C630FD-C4E3-44A6-8F7E-682BF38B1C85}
+		{60AB7452-DDA5-4AAD-87CA-81151455B3EC} = {F1AA74D2-2680-4759-B702-88FB5D02482E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {668FBAF8-0760-44A0-AD46-B89040394F0F}

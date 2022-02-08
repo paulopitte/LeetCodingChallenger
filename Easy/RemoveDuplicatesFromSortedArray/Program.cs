@@ -60,6 +60,7 @@ namespace RemoveDuplicatesFromSortedArray
         }
 
 
+        //refactor
         private static int RemoveDuplicates(int[] nums)
         {
             int i = 0;
@@ -70,5 +71,26 @@ namespace RemoveDuplicatesFromSortedArray
             }
             return i;
         }
+
+
+        //public static int RemoveDuplicates(int[] nums)
+        //{
+        //    int i = 0;
+
+        //    foreach (var item in nums)
+        //    {
+        //        if(i <1 || item > nums[i - 1])
+        //        {
+        //            nums[i] = item;
+        //            i++;                   
+        //        }
+
+        //    }
+        //    return i;
+        //}
+
+
+ 
+
     }
 }

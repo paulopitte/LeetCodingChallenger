@@ -1,111 +1,56 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 
 namespace TwoSum
 {
-    class Program
+    internal sealed class Program
     {
+
+        /* Referencia
+         * https://leetcode.com/problems/two-sum/
+         * 
+         * Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+            You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+            You can return the answer in any order.
+
+ 
+
+            Example 1:
+
+            Input: nums = [2,7,11,15], target = 9
+            Output: [0,1]
+            Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+            Example 2:
+
+            Input: nums = [3,2,4], target = 6
+            Output: [1,2]
+            Example 3:
+
+            Input: nums = [3,3], target = 6
+            Output: [0,1]
+ 
+
+            Constraints:
+
+            2 <= nums.length <= 104
+            -109 <= nums[i] <= 109
+            -109 <= target <= 109
+            Only one valid answer exists.
+ 
+
+            Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
+         */
+
+
         static void Main(string[] args)
         {
             Console.WriteLine("Two Sum!");
-  
-            var returnAddDigits = AddDigits(38);
 
-            var returnRemoveDuplicates = RemoveDuplicates(new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 });
+            //  Output: [0,1]
+            var ret = TwoSum(nums: new int[] { 7, 2, 13, 11 }, target: 9);
 
-
-          
-
-            var valor = CountChars("aaabbcccc");
-
-            var xx = maximumPages(new SinglyLinkedListNode(4));
-
-
-
-
-
-
-            var ret = TwoSum(new int[] { 7, 2, 13, 11 }, 9);
-
-
-
-            string[] repo = new[] { "Carro", "Caro", "Carripa", "Mouse", "Teclado", "Tech", "Tecla" };
-
-
-            string query = Console.ReadLine();
-            searchSuggestions(repo, query);
         }
-
-
-        private static long CountChars(String password)
-        {
-            if (password == null || password.Length == 0) return 0;
-
-            long response = 0L;
-            for (int indexPass = 1; indexPass <= password.Length; indexPass++)
-            {
-                List<string> charPass = new();
-                var duplicate = 0;
-                for (int indexChar = indexPass - 1; indexChar >= 0; indexChar--)
-                {
-                    var unitChar = password[indexChar].ToString();
-                    if (charPass.Contains(unitChar))
-                        duplicate++;
-
-                    charPass.Add(unitChar);
-                    response += (indexPass - indexChar - duplicate);
-                }
-            }
-            return response;
-        }
-
-        public static int maximumPages(SinglyLinkedListNode head)
-        {
-            SinglyLinkedListNode fast = head;
-            SinglyLinkedListNode slow = head;
-            SinglyLinkedListNode current = head;
-            while (fast != null && fast.next != null)
-            {
-                slow = slow.next;
-                fast = fast.next.next;
-            }
-            slow = reverse(slow);
-            int max = int.MinValue;
-            while (slow != null)
-            {
-                int sum = slow.data + current.data;
-                if (max < sum)
-                {
-                    max = sum;
-                }
-                slow = slow.next;
-                current = current.next;
-            }
-            return max;
-        }
-
-        public static SinglyLinkedListNode reverse(SinglyLinkedListNode head)
-        {
-
-            SinglyLinkedListNode prev = null;
-            SinglyLinkedListNode next = head;
-            SinglyLinkedListNode current = head;
-
-            while (current != null)
-            {
-                next = next.next;
-                current.next = prev;
-                prev = current;
-                current = next;
-            }
-
-            return prev;
-        }
-
-
-
 
         private static int[] TwoSum(int[] nums, int target)
         {
@@ -116,124 +61,5 @@ namespace TwoSum
 
             return null;
         }
-
-        //public static int RemoveDuplicates(int[] nums)
-        //{
-        //    int i = 0;
-
-        //    foreach (var item in nums)
-        //    {
-        //        if(i <1 || item > nums[i - 1])
-        //        {
-        //            nums[i] = item;
-        //            i++;                   
-        //        }
-
-        //    }
-        //    return i;
-        //}
-
-        // metodo 1
-        //public static int RemoveDuplicates(int[] nums)
-        //{
-        //    int i = 0;
-        //    foreach (int item in nums.Where(item => i < 1 || item > nums[i - 1]))
-        //    {
-        //        nums[i] = item;
-        //        i++;
-        //    }
-        //    return i;
-        //}
-
-        //desafio  array II
-        public static int RemoveDuplicates(int[] nums)
-        {
-            int count = 0;
-            foreach (int item in from item in nums
-                                 where count < 2 || item > nums[count - 2]
-                                 select item)
-            {
-                nums[count] = item;
-                count++;
-            }
-            return count;
-        }
-
-
-
-        public static int AddDigits(int num)
-        {           
-
-            while (num > 9)
-            {
-                int result = 0;
-                while (num > 0)
-                {
-                    result += num % 10;
-                    num /= 10;
-                }
-                num = result;
-            }
-
-            return num;
-        }
-
-        //public static int AddDigits(int num)
-        //{
-        //    while (num > 9)
-        //    {
-        //        int res = 0;
-        //        while (num > 0)
-        //        {
-        //            res += num % 10;
-        //            num /= 10;
-        //        }
-        //        num = res;
-        //    }
-
-        //    return num;
-        //}
-        public static void searchSuggestions(string[] repository, string customerQuery)
-        {
-
-            #region teste1
-
-            string search_char = customerQuery.Substring(0, 1).ToUpper();
-            List<string> match = new();
-            for (int i = 0; i < repository.Length; i++)
-            {
-                string query = repository[i];
-                if (query.Substring(0, 1).ToUpper() == search_char)
-                    match.Add(query);
-            }
-            #endregion
-
-
-            #region teste2
-            string start_char = customerQuery.Substring(0, 1).ToUpper();
-            int start_index = Array.BinarySearch(repository, start_char);
-
-            List<string> match_words = new();
-            for (int i = start_index + 1; i < repository.Length; i++)
-            {
-                string test_word = repository[i];
-                if (test_word.Substring(0, 1).ToUpper() != start_char)
-                    break;
-                int max_length = Math.Min(test_word.Length, customerQuery.Length);
-                string short_word = test_word.Substring(0, max_length);
-
-
-                match_words.Add(test_word);
-            }
-
-            #endregion
-        }
-
-
-
     }
-
-
-
-
 }
