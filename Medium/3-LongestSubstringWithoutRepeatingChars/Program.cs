@@ -45,7 +45,7 @@ namespace _3_LongestSubstringWithoutRepeatingChars
             Console.WriteLine("3. Longest Substring Without Repeating Characters!");
 
             // Output: 3
-            var result = LengthOfLongestSubstring("abcabcbbx");
+            var result = LengthOfLongestSubstring("pwwkew");
 
         }
 
@@ -69,9 +69,11 @@ namespace _3_LongestSubstringWithoutRepeatingChars
                 if (duplicationIndex < lastIndex)               
                     duplicationIndex = lastIndex;
 
-                if (!map.ContainsKey(v))               
+                if (!map.ContainsKey(v))
+                {
                     maxSize = Math.Max(maxSize, i - duplicationIndex);
                     map.Add(chars[i], i);
+                }
                 
             }
 
