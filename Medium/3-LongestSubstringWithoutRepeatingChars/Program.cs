@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace _3_LongestSubstringWithoutRepeatingChars
 {
-  internal sealed  class Program
+    internal sealed class Program
     {
 
         /*
@@ -44,40 +44,33 @@ namespace _3_LongestSubstringWithoutRepeatingChars
         {
             Console.WriteLine("3. Longest Substring Without Repeating Characters!");
 
-            // Output: 3
-            var result = LengthOfLongestSubstring("pwwkew");
+            // Output: 3 // wke
+            var result = LengthOfLongestSubstring("abcabcbb");
 
         }
 
-
-        private static int LengthOfLongestSubstring(string s)
+        private static int LengthOfLongestSubstring(String s)
         {
-            if (string.IsNullOrEmpty(s) || s.Length == 0)            
-                return 0;
+            int forward = 0;     
+            int last = 0;         
+            int size = 0;
+            HashSet<char> hash = new();
 
-            Dictionary<char, int> map = new();
-
-            int duplicationIndex = -1;
-            int maxSize = 0;
-
-            char[] chars = s.ToCharArray();
-            for (int i = 0; i < chars.Length; i++)
+            while (forward < s.Length)
             {
-                char v = chars[i];
-                int lastIndex = map.GetValueOrDefault(v);
-
-                if (duplicationIndex < lastIndex)               
-                    duplicationIndex = lastIndex;
-
-                if (!map.ContainsKey(v))
+                if (!hash.Contains(s[forward]))
                 {
-                    maxSize = Math.Max(maxSize, i - duplicationIndex);
-                    map.Add(chars[i], i);
+                    hash.Add(s[forward]);
+                    forward++;
+                    size = Math.Max(size, hash.Count);
                 }
-                
+                else
+                {
+                    hash.Remove(s[last]);
+                    last++;
+                }
             }
-
-            return map.Count;
+            return size;
         }
     }
 }
