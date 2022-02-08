@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hard", "Hard", "{F1AA74D2-2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddDigits", "..\AddDigits\AddDigits.csproj", "{2DF11958-D3E4-4676-9B5F-657836BF173A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveDuplicatesFromSortedArray", "..\RemoveDuplicatesFromSortedArray\RemoveDuplicatesFromSortedArray.csproj", "{7EB77394-96C0-4E66-AB49-9EB06FE4073A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2DF11958-D3E4-4676-9B5F-657836BF173A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DF11958-D3E4-4676-9B5F-657836BF173A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DF11958-D3E4-4676-9B5F-657836BF173A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EB77394-96C0-4E66-AB49-9EB06FE4073A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EB77394-96C0-4E66-AB49-9EB06FE4073A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EB77394-96C0-4E66-AB49-9EB06FE4073A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EB77394-96C0-4E66-AB49-9EB06FE4073A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{E0015724-6476-4E27-947C-8F2BA8B635C4} = {3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}
 		{2DF11958-D3E4-4676-9B5F-657836BF173A} = {3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}
+		{7EB77394-96C0-4E66-AB49-9EB06FE4073A} = {3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {668FBAF8-0760-44A0-AD46-B89040394F0F}
