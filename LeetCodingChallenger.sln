@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32002.261
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Easy", "Easy", "{3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}"
 EndProject
@@ -15,11 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwoSum", "Easy\TwoSum\TwoSu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoveDuplicatesFromSortedArray", "Easy\RemoveDuplicatesFromSortedArray\RemoveDuplicatesFromSortedArray.csproj", "{0E653260-6817-4D68-ADE8-B4A24D9B6191}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveDuplicatesFromSortedArrayII", "Medium\RemoveDuplicatesFromSortedArrayII\RemoveDuplicatesFromSortedArrayII.csproj", "{B15BC350-511E-442E-B3CD-7C26CE97D811}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoveDuplicatesFromSortedArrayII", "Medium\RemoveDuplicatesFromSortedArrayII\RemoveDuplicatesFromSortedArrayII.csproj", "{B15BC350-511E-442E-B3CD-7C26CE97D811}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonTest", "AmazonTest\AmazonTest\AmazonTest.csproj", "{60AB7452-DDA5-4AAD-87CA-81151455B3EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazonTest", "AmazonTest\AmazonTest\AmazonTest.csproj", "{60AB7452-DDA5-4AAD-87CA-81151455B3EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-LongestSubstringWithoutRepeatingChars", "Medium\3-LongestSubstringWithoutRepeatingChars\3-LongestSubstringWithoutRepeatingChars.csproj", "{6E99AC59-8BA7-42D3-B3B1-F2180AA385EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3-LongestSubstringWithoutRepeatingChars", "Medium\3-LongestSubstringWithoutRepeatingChars\3-LongestSubstringWithoutRepeatingChars.csproj", "{6E99AC59-8BA7-42D3-B3B1-F2180AA385EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "268-MissingNumber", "Easy\268-MissingNumber\268-MissingNumber.csproj", "{E7F49D77-FABD-4AB7-B1B6-389A26F26AA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{6E99AC59-8BA7-42D3-B3B1-F2180AA385EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E99AC59-8BA7-42D3-B3B1-F2180AA385EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E99AC59-8BA7-42D3-B3B1-F2180AA385EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7F49D77-FABD-4AB7-B1B6-389A26F26AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7F49D77-FABD-4AB7-B1B6-389A26F26AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7F49D77-FABD-4AB7-B1B6-389A26F26AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7F49D77-FABD-4AB7-B1B6-389A26F26AA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +68,7 @@ Global
 		{B15BC350-511E-442E-B3CD-7C26CE97D811} = {94C630FD-C4E3-44A6-8F7E-682BF38B1C85}
 		{60AB7452-DDA5-4AAD-87CA-81151455B3EC} = {F1AA74D2-2680-4759-B702-88FB5D02482E}
 		{6E99AC59-8BA7-42D3-B3B1-F2180AA385EB} = {94C630FD-C4E3-44A6-8F7E-682BF38B1C85}
+		{E7F49D77-FABD-4AB7-B1B6-389A26F26AA2} = {3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {668FBAF8-0760-44A0-AD46-B89040394F0F}
