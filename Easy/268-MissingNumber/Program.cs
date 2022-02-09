@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using static System.Console;
 namespace _268_MissingNumber
 {
@@ -48,10 +49,10 @@ namespace _268_MissingNumber
             WriteLine("Find Missing Number");
             WriteLine("---------------------------------------");
 
-            var random_array = new short[] { 9, 6, 4, 2, 3, 5, 7, 0, 1 };
+            var random_array = new int[] { 3, 7, 1, 2, 8, 0, 4, 5 };
             var result = Solution.MissingNumber(random_array);
 
-            WriteLine("actual missing is " + result);                 
+            WriteLine("actual missing is " + result);
             Console.ReadKey();
 
         }
@@ -61,13 +62,16 @@ namespace _268_MissingNumber
 
     internal static class Solution
     {
-        public static int MissingNumber(short[] numbers)
+        public static int MissingNumber(int[] numbers)
         {
+            if (numbers.Length == 0 || numbers == null || !numbers.Any(x => x <= 0))
+                return 0;
+
             int missing = 0;
-                        
+
             for (int index = 0; index < numbers.Length; index++)
                 missing += (numbers.Length - index - numbers[index]);
-            
+
             return missing;
         }
     }
