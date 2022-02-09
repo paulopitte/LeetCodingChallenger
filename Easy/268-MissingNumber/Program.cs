@@ -1,5 +1,5 @@
 ﻿using System;
-
+using static System.Console;
 namespace _268_MissingNumber
 {
     internal class Program
@@ -42,11 +42,16 @@ namespace _268_MissingNumber
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Missing Number!");
+            WriteLine("");
+            WriteLine("");
+            WriteLine("+++++++++++++++++++++++++++++++++++++++");
+            WriteLine("Find Missing Number");
+            WriteLine("---------------------------------------");
 
+            var random_array = new short[] { 9, 6, 4, 2, 3, 5, 7, 0, 1 };
+            var result = Solution.MissingNumber(random_array);
 
-            var result = Solution.MissingNumber(new short[] { 9, 6, 4, 2, 3, 5, 7, 0, 1 });
-            Console.WriteLine(result);
+            WriteLine("actual missing is " + result);                 
             Console.ReadKey();
 
         }
