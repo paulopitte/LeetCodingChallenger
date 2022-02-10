@@ -43,7 +43,7 @@ namespace _268_MissingNumber
 
         static void Main(string[] args)
         {
-            WriteLine("");
+           
             WriteLine("");
             WriteLine("+++++++++++++++++++++++++++++++++++++++");
             WriteLine("Find Missing Number");
