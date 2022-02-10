@@ -67,11 +67,7 @@ namespace _199_BinaryTreeRightSideView
             result.ToList().ForEach((c) => Write(c.ToString() + " "));
             Console.ReadKey();
         }
-
     }
-
-
-
     public static class Solution
     {
         public static IList<int> RightSideView(TreeNode root)
