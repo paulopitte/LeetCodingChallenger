@@ -38,7 +38,7 @@ namespace _217_ContainsDuplicate
             var array = new int[] { 3, 7, 1, 2, 8, 4, 5, 3 };
             var result = Solution.ContainsDuplicate(array);
 
-            WriteLine("return" + result);
+            WriteLine("return => " + result);
             Console.ReadKey();
         }
     }
@@ -47,10 +47,6 @@ namespace _217_ContainsDuplicate
     {
         public static bool ContainsDuplicate(int[] nums) =>
              new HashSet<int>(nums).Count < nums.Length;
-
-
-
-
 
     }
 }

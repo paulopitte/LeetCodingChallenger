@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "371-AddTwoNumbers", "Medium
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "217-ContainsDuplicate", "Easy\217-ContainsDuplicate\217-ContainsDuplicate.csproj", "{4F5C2243-B00B-4764-847F-C79368C2074A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "53-MaximumSubarray", "Easy\53-MaximumSubarray\53-MaximumSubarray.csproj", "{B15F6BFF-6E8E-4962-A1CE-13B8447BFB5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{4F5C2243-B00B-4764-847F-C79368C2074A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F5C2243-B00B-4764-847F-C79368C2074A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F5C2243-B00B-4764-847F-C79368C2074A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B15F6BFF-6E8E-4962-A1CE-13B8447BFB5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B15F6BFF-6E8E-4962-A1CE-13B8447BFB5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B15F6BFF-6E8E-4962-A1CE-13B8447BFB5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B15F6BFF-6E8E-4962-A1CE-13B8447BFB5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +89,7 @@ Global
 		{E7F49D77-FABD-4AB7-B1B6-389A26F26AA2} = {3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}
 		{79BBDD63-4492-4B25-914B-B974D2C45E96} = {94C630FD-C4E3-44A6-8F7E-682BF38B1C85}
 		{4F5C2243-B00B-4764-847F-C79368C2074A} = {3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}
+		{B15F6BFF-6E8E-4962-A1CE-13B8447BFB5A} = {3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {668FBAF8-0760-44A0-AD46-B89040394F0F}
