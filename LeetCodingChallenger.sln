@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazonTest", "AmazonTest\Am
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3-LongestSubstringWithoutRepeatingChars", "Medium\3-LongestSubstringWithoutRepeatingChars\3-LongestSubstringWithoutRepeatingChars.csproj", "{6E99AC59-8BA7-42D3-B3B1-F2180AA385EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "268-MissingNumber", "Easy\268-MissingNumber\268-MissingNumber.csproj", "{E7F49D77-FABD-4AB7-B1B6-389A26F26AA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "268-MissingNumber", "Easy\268-MissingNumber\268-MissingNumber.csproj", "{E7F49D77-FABD-4AB7-B1B6-389A26F26AA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "371-AddTwoNumbers", "Medium\2-AddTwoNumbers\371-AddTwoNumbers.csproj", "{79BBDD63-4492-4B25-914B-B974D2C45E96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "371-AddTwoNumbers", "Medium\2-AddTwoNumbers\371-AddTwoNumbers.csproj", "{79BBDD63-4492-4B25-914B-B974D2C45E96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "217-ContainsDuplicate", "Easy\217-ContainsDuplicate\217-ContainsDuplicate.csproj", "{4F5C2243-B00B-4764-847F-C79368C2074A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{79BBDD63-4492-4B25-914B-B974D2C45E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79BBDD63-4492-4B25-914B-B974D2C45E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79BBDD63-4492-4B25-914B-B974D2C45E96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F5C2243-B00B-4764-847F-C79368C2074A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F5C2243-B00B-4764-847F-C79368C2074A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F5C2243-B00B-4764-847F-C79368C2074A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F5C2243-B00B-4764-847F-C79368C2074A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +82,7 @@ Global
 		{6E99AC59-8BA7-42D3-B3B1-F2180AA385EB} = {94C630FD-C4E3-44A6-8F7E-682BF38B1C85}
 		{E7F49D77-FABD-4AB7-B1B6-389A26F26AA2} = {3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}
 		{79BBDD63-4492-4B25-914B-B974D2C45E96} = {94C630FD-C4E3-44A6-8F7E-682BF38B1C85}
+		{4F5C2243-B00B-4764-847F-C79368C2074A} = {3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {668FBAF8-0760-44A0-AD46-B89040394F0F}
