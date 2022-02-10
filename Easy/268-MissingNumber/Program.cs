@@ -49,7 +49,7 @@ namespace _268_MissingNumber
             WriteLine("Find Missing Number");
             WriteLine("---------------------------------------");
 
-            var random_array = new int[] { 3, 7, 1, 2, 8, 0, 4, 5 };
+            var random_array = new int[] { 3, 7, 1, 2, 8,  4, 5 };
             var result = Solution.MissingNumber(random_array);
 
             WriteLine("actual missing is " + result);
@@ -64,7 +64,7 @@ namespace _268_MissingNumber
     {
         public static int MissingNumber(int[] numbers)
         {
-            if (numbers.Length == 0 || numbers == null || !numbers.Any(x => x <= 0))
+            if (numbers.Length == 0 || numbers == null || !numbers.Any(x => x < 1))
                 return 0;
 
             int missing = 0;
