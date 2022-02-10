@@ -9,13 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Medium", "Medium", "{94C630
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hard", "Hard", "{F1AA74D2-2680-4759-B702-88FB5D02482E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddDigits", "Easy\AddDigits\AddDigits.csproj", "{4BC2402F-D302-4C94-BAD2-B0438E575DD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "258-AddDigits", "Easy\AddDigits\258-AddDigits.csproj", "{4BC2402F-D302-4C94-BAD2-B0438E575DD8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwoSum", "Easy\TwoSum\TwoSum.csproj", "{E8CCAF12-8D84-411C-8340-F791A89EECAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1-TwoSum", "Easy\TwoSum\1-TwoSum.csproj", "{E8CCAF12-8D84-411C-8340-F791A89EECAD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoveDuplicatesFromSortedArray", "Easy\RemoveDuplicatesFromSortedArray\RemoveDuplicatesFromSortedArray.csproj", "{0E653260-6817-4D68-ADE8-B4A24D9B6191}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "26-RemoveDuplicatesFromSortedArray", "Easy\RemoveDuplicatesFromSortedArray\26-RemoveDuplicatesFromSortedArray.csproj", "{0E653260-6817-4D68-ADE8-B4A24D9B6191}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoveDuplicatesFromSortedArrayII", "Medium\RemoveDuplicatesFromSortedArrayII\RemoveDuplicatesFromSortedArrayII.csproj", "{B15BC350-511E-442E-B3CD-7C26CE97D811}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "26-RemoveDuplicatesFromSortedArrayII", "Medium\RemoveDuplicatesFromSortedArrayII\26-RemoveDuplicatesFromSortedArrayII.csproj", "{B15BC350-511E-442E-B3CD-7C26CE97D811}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazonTest", "AmazonTest\AmazonTest\AmazonTest.csproj", "{60AB7452-DDA5-4AAD-87CA-81151455B3EC}"
 EndProject
@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3-LongestSubstringWithoutRe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "268-MissingNumber", "Easy\268-MissingNumber\268-MissingNumber.csproj", "{E7F49D77-FABD-4AB7-B1B6-389A26F26AA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-AddTwoNumbers", "Medium\2-AddTwoNumbers\2-AddTwoNumbers.csproj", "{79BBDD63-4492-4B25-914B-B974D2C45E96}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "371-AddTwoNumbers", "Medium\2-AddTwoNumbers\371-AddTwoNumbers.csproj", "{79BBDD63-4492-4B25-914B-B974D2C45E96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
