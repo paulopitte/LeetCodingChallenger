@@ -49,8 +49,6 @@ namespace _2_AddTwoNumbers
 
             WriteLine("result : " + result);
             Console.ReadKey();
-
-
         }
     }
 

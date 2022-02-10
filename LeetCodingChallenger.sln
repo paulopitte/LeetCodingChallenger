@@ -25,9 +25,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "268-MissingNumber", "Easy\2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "371-AddTwoNumbers", "Medium\2-AddTwoNumbers\371-AddTwoNumbers.csproj", "{79BBDD63-4492-4B25-914B-B974D2C45E96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "217-ContainsDuplicate", "Easy\217-ContainsDuplicate\217-ContainsDuplicate.csproj", "{4F5C2243-B00B-4764-847F-C79368C2074A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "217-ContainsDuplicate", "Easy\217-ContainsDuplicate\217-ContainsDuplicate.csproj", "{4F5C2243-B00B-4764-847F-C79368C2074A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "53-MaximumSubarray", "Easy\53-MaximumSubarray\53-MaximumSubarray.csproj", "{B15F6BFF-6E8E-4962-A1CE-13B8447BFB5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "53-MaximumSubarray", "Easy\53-MaximumSubarray\53-MaximumSubarray.csproj", "{B15F6BFF-6E8E-4962-A1CE-13B8447BFB5A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringEncodingSumDuplication", "AmazonTest\StringEncodingSumDuplication\StringEncodingSumDuplication.csproj", "{0BCEF46E-C819-4AEA-ACCD-5F2E1FBE662E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "199-BinaryTreeRightSideView", "Medium\199-BinaryTreeRightSideView\199-BinaryTreeRightSideView.csproj", "{DE8A7CFE-7F14-498C-8BBA-02189C86D8B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +79,14 @@ Global
 		{B15F6BFF-6E8E-4962-A1CE-13B8447BFB5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B15F6BFF-6E8E-4962-A1CE-13B8447BFB5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B15F6BFF-6E8E-4962-A1CE-13B8447BFB5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BCEF46E-C819-4AEA-ACCD-5F2E1FBE662E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BCEF46E-C819-4AEA-ACCD-5F2E1FBE662E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BCEF46E-C819-4AEA-ACCD-5F2E1FBE662E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BCEF46E-C819-4AEA-ACCD-5F2E1FBE662E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE8A7CFE-7F14-498C-8BBA-02189C86D8B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE8A7CFE-7F14-498C-8BBA-02189C86D8B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE8A7CFE-7F14-498C-8BBA-02189C86D8B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE8A7CFE-7F14-498C-8BBA-02189C86D8B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,6 +102,8 @@ Global
 		{79BBDD63-4492-4B25-914B-B974D2C45E96} = {94C630FD-C4E3-44A6-8F7E-682BF38B1C85}
 		{4F5C2243-B00B-4764-847F-C79368C2074A} = {3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}
 		{B15F6BFF-6E8E-4962-A1CE-13B8447BFB5A} = {3B9D8DB9-FE4A-4A4B-BC35-36EA05EFF75C}
+		{0BCEF46E-C819-4AEA-ACCD-5F2E1FBE662E} = {F1AA74D2-2680-4759-B702-88FB5D02482E}
+		{DE8A7CFE-7F14-498C-8BBA-02189C86D8B4} = {94C630FD-C4E3-44A6-8F7E-682BF38B1C85}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {668FBAF8-0760-44A0-AD46-B89040394F0F}
