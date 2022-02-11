@@ -31,9 +31,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "53-MaximumSubarray", "Easy\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringEncodingSumDuplication", "AmazonTest\StringEncodingSumDuplication\StringEncodingSumDuplication.csproj", "{0BCEF46E-C819-4AEA-ACCD-5F2E1FBE662E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "199-BinaryTreeRightSideView", "Medium\199-BinaryTreeRightSideView\199-BinaryTreeRightSideView.csproj", "{DE8A7CFE-7F14-498C-8BBA-02189C86D8B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "199-BinaryTreeRightSideView", "Medium\199-BinaryTreeRightSideView\199-BinaryTreeRightSideView.csproj", "{DE8A7CFE-7F14-498C-8BBA-02189C86D8B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTreeLeftSideView", "Medium\BinaryTreeLeftSideView\BinaryTreeLeftSideView.csproj", "{C0FDE335-C698-492F-AB34-BDF4EAF1E864}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryTreeLeftSideView", "Medium\BinaryTreeLeftSideView\BinaryTreeLeftSideView.csproj", "{C0FDE335-C698-492F-AB34-BDF4EAF1E864}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "134-GasStation", "Medium\134-GasStation\134-GasStation.csproj", "{2CE0CF88-846C-4624-A696-838B602E806A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{C0FDE335-C698-492F-AB34-BDF4EAF1E864}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0FDE335-C698-492F-AB34-BDF4EAF1E864}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0FDE335-C698-492F-AB34-BDF4EAF1E864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CE0CF88-846C-4624-A696-838B602E806A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CE0CF88-846C-4624-A696-838B602E806A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CE0CF88-846C-4624-A696-838B602E806A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CE0CF88-846C-4624-A696-838B602E806A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -111,6 +117,7 @@ Global
 		{0BCEF46E-C819-4AEA-ACCD-5F2E1FBE662E} = {F1AA74D2-2680-4759-B702-88FB5D02482E}
 		{DE8A7CFE-7F14-498C-8BBA-02189C86D8B4} = {94C630FD-C4E3-44A6-8F7E-682BF38B1C85}
 		{C0FDE335-C698-492F-AB34-BDF4EAF1E864} = {94C630FD-C4E3-44A6-8F7E-682BF38B1C85}
+		{2CE0CF88-846C-4624-A696-838B602E806A} = {94C630FD-C4E3-44A6-8F7E-682BF38B1C85}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {668FBAF8-0760-44A0-AD46-B89040394F0F}
