@@ -66,17 +66,17 @@ namespace _134_GasStation
     {
         public static int gasStationQuadratica(int[] gas, int[] cost)
         {
-            int total = 0, fuel = 0, result = 0;
+            int total = 0, fuel = 0, result = 0;         
 
-            for (int i = 0; i < gas.Length; i++) // N linear ou O(N)
-            {
+            for (int i = 0; i < gas.Length; i++)
+            { // N linear ou O(N)
                 fuel += gas[i] - cost[i]; // somo a gasolina - o custo de viagem
                 if (fuel < 0)
                 {
                     fuel = 0;
-                    result++;
+                    result = i + 1;
                 }
-                total += gas[i] - cost[i];// somo o Delta atual e sigo para próxima estação
+                total += gas[i] - cost[i]; // somo o Delta atual e sigo para próxima estação
             }
             return total < 0 ? -1 : result;
         }
