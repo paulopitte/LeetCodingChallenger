@@ -23,12 +23,12 @@ namespace AmazonTest
         {
             WriteLine("");
             WriteLine("+++++++++++++++++++++++++++++++++++++++");
-            WriteLine("Count strength of password | amazon");
+            WriteLine("Count strength of password | amazon" + "[  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,13] Esperado => 14 ");
             WriteLine("---------------------------------------");
 
-            var nodes = ToListNode(new int[] { 1, 20, 3, 4, 9, 10 });
-            WriteLine("Result : " + Solution.MaxLinkedListSum(nodes));                   
-        
+            var nodes = ToListNode(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,13 });
+            WriteLine("Result : " + Solution.MaxLinkedListSum(nodes));
+
             ReadKey();
         }
 
@@ -77,7 +77,7 @@ namespace AmazonTest
             // verifico se ainda existe ponteiros a serem listados
             while (fast != null && fast.next != null)
             {
-                // a ideéia é partir na metade a lista
+                // a idéia é partir na metade a lista
                 slow = slow.next;
                 fast = fast.next.next;
             }
@@ -94,9 +94,10 @@ namespace AmazonTest
                 prev = slow;
                 slow = nextNode;
             }
-            int maxSum = int.MinValue;
+            int maxSum = 0;
             while (first != null && prev != null)
             {
+                // realiza a soma do ponteiros paralelos
                 maxSum = Math.Max(maxSum, first.val + prev.val);
                 first = first.next;
                 prev = prev.next;
