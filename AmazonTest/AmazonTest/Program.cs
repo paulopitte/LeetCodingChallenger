@@ -9,7 +9,7 @@ namespace AmazonTest
         {
             Console.WriteLine("Amazon Test Step 2 process!");
 
-            var resultValues = CountChars("good");
+            var resultValues = CountChars("abc");
 
             var resultPages = MaximumPages(new SinglyLinkedListNode(4));
 
@@ -20,6 +20,10 @@ namespace AmazonTest
             string query = Console.ReadLine();
             searchSuggestions(repo, query);
         }
+
+
+
+
 
 
 
