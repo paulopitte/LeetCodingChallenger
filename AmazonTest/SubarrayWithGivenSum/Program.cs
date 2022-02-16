@@ -58,7 +58,8 @@ namespace AmazonTest
 
             // WriteLine("Result : " + Solution.SubarraySum_SOLUCTION_ONE(new int[] { 1, 2, 3, 7, 5 },  12));
             // WriteLine("Result : " + Solution.SubarraySum_SOLUCTION_TWO(new int[] { 1, 2, 3, 7, 5 }, 12));
-            WriteLine("Result : " + Solution.SubarraySum_SOLUCTION_THREE(new int[] { 4, 2, 3, 7, 2, 4, 2 }, 13));
+            // WriteLine("Result : " + Solution.SubarraySum_SOLUCTION_THREE(new int[] { 4, 2, 3, 7, 2, 4, 2 }, 13));
+            WriteLine("Result : " + Solution.SubarraySum_SOLUCTION_FOUR(new int[] { 4, 2, 3, 7, 2, 4, 2 }, 13));
 
             ReadKey();
         }
@@ -121,11 +122,55 @@ namespace AmazonTest
         }
 
 
-        // SOLUÇÃO 3 - APLICANDO TECNICA DE SLIDE WINDON OU TWO POINT PARA OBTER UMA MELHOR PERFORMATICA O(N) LINERAR
+        // SOLUÇÃO 3 - APLICANDO TECNICA DE (SLIDING WINDON) OU (TWO POINTERS) PARA OBTER UMA MELHOR PERFORMATICA O(N) LINERAR
+        // A GRANDE SACADA É MOVER OS PONTEIROS FRIST E END JUNTAMENTE CONFORME A REGRA PROPOSTA.
         public static bool SubarraySum_SOLUCTION_THREE(int[] arr, int s)
         {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                int soma_atual = 0;
+                for (int j = i; j < arr.Length; j++)
+                {
+                    soma_atual += arr[j];
+
+                    if (soma_atual == s)
+                    {
+                        WriteLine("posição 1: " + i++ + " => posição 2: " + j++);
+                        return true;
+                    }
+                    else if (soma_atual > s)
+                        break;
+                }
+            }
+            return false;
+        }
+
+
+        public static bool SubarraySum_SOLUCTION_FOUR(int[] arr, int s)
+        {
+            int soma_atual = 0; // O(2N) == o(n)
+            int inicio = 0;
+
+            for (int fim = 0; fim < arr.Length; fim++) // o(N)
+            {
+                soma_atual += arr[fim]; // Constante
+
+                while (soma_atual > s && inicio < fim) //  Constante pois temos inicio e fim setando 
+                {
+                    soma_atual -= arr[inicio];
+                    inicio++;
+                }
+
+                if (soma_atual == s)
+                {
+                    WriteLine("posição 1: " + inicio++ + " => posição 2: " + fim++);
+                    return true;
+                }
+
+            }
 
             return false;
         }
+
     }
 }
