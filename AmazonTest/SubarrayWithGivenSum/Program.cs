@@ -56,7 +56,9 @@ namespace AmazonTest
             WriteLine("Subarray with given sum" + "[  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,13] Esperado => 14 ");
             WriteLine("---------------------------------------");
 
-            WriteLine("Result : " + Solution.SubarraySum(new int[] { 1, 2, 3, 7, 5 }, 12, 0));
+            // WriteLine("Result : " + Solution.SubarraySum_SOLUCTION_ONE(new int[] { 1, 2, 3, 7, 5 },  12));
+            // WriteLine("Result : " + Solution.SubarraySum_SOLUCTION_TWO(new int[] { 1, 2, 3, 7, 5 }, 12));
+            WriteLine("Result : " + Solution.SubarraySum_SOLUCTION_THREE(new int[] { 1, 2, 3, 7, 5 }, 12));
 
             ReadKey();
         }
@@ -64,12 +66,66 @@ namespace AmazonTest
 
     class Solution
     {
-        public static List<int> SubarraySum(int[] arr, int n, int s)
+
+        //Solução 1 menos performática classificada como complexidade O(N^3)
+        public static bool SubarraySum_SOLUCTION_ONE(int[] arr, int s)
         {
-            List<int> result = new();
+
+            for (int i = 0; i < arr.Length; i++) // O(N)
+            {
+                WriteLine(" Level 1 =>  " + arr[i]);
+
+                for (int j = i; j < arr.Length; j++) // O(N)
+                {
+                    int soma_atual = 0;
+                    WriteLine(" Level 2 =>  " + arr[j]);
+
+                    for (int k = i; k <= j; k++)// O(N)
+                    {
+                        soma_atual += arr[k];
+                        WriteLine(" Level 3 =>  " + arr[k] + "SOMA =>" + soma_atual);
+                        if (soma_atual == s)
+                        {
+                            WriteLine(i++ + "" + j++);
+                            return true;
+
+                        }
+                    }
+                }
+            }
+            return false;
+        }
 
 
-            return result;
+        //Solução 2 menos performática classificada como complexidade O(N^2)
+        public static bool SubarraySum_SOLUCTION_TWO(int[] arr, int s)
+        {
+            for (int i = 0; i < arr.Length; i++)// O(N)
+            {
+                int soma_atual = 0;
+                WriteLine(" Valor 1 =>  " + arr[i]);
+                for (int j = i; j < arr.Length; j++)// O(N)
+                {
+                    WriteLine(" Valor 2 =>  " + arr[j]);
+
+                    soma_atual += arr[j];
+                    WriteLine(" Valor 3 =>  " + arr[j] + " SOMA => " + soma_atual);
+                    if (soma_atual == s)
+                    {
+                        WriteLine(i++ + "" + j++);
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        
+        // SOLUÇÃO 3 - APLICANDO TECNICA DE SLIDE WINDON OU TWO POINT PARA OBTER UMA MELHOR PERFORMATICA O(N) LINERAR
+        public static bool SubarraySum_SOLUCTION_THREE(int[] arr, int s)
+        {
+
+            return false;
         }
     }
 }
