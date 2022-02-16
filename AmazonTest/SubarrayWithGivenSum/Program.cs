@@ -53,12 +53,12 @@ namespace AmazonTest
         {
             WriteLine("");
             WriteLine("+++++++++++++++++++++++++++++++++++++++");
-            WriteLine("Subarray with given sum" + "[  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,13] Esperado => 14 ");
+            WriteLine("Subarray with given sum" + "[  1, 2, 3, 7, 5 ] Esperado => 12 ");
             WriteLine("---------------------------------------");
 
             // WriteLine("Result : " + Solution.SubarraySum_SOLUCTION_ONE(new int[] { 1, 2, 3, 7, 5 },  12));
             // WriteLine("Result : " + Solution.SubarraySum_SOLUCTION_TWO(new int[] { 1, 2, 3, 7, 5 }, 12));
-            WriteLine("Result : " + Solution.SubarraySum_SOLUCTION_THREE(new int[] { 1, 2, 3, 7, 5 }, 12));
+            WriteLine("Result : " + Solution.SubarraySum_SOLUCTION_THREE(new int[] { 4, 2, 3, 7, 2, 4, 2 }, 13));
 
             ReadKey();
         }
@@ -120,7 +120,7 @@ namespace AmazonTest
             return false;
         }
 
-        
+
         // SOLUÇÃO 3 - APLICANDO TECNICA DE SLIDE WINDON OU TWO POINT PARA OBTER UMA MELHOR PERFORMATICA O(N) LINERAR
         public static bool SubarraySum_SOLUCTION_THREE(int[] arr, int s)
         {
