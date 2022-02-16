@@ -15,7 +15,7 @@ namespace AmazonTest
             WriteLine("First Duplicate " + "[  2, 1, 3, 5, 3, 2 ] Esperado => 3 ");
             WriteLine("---------------------------------------");
 
-             WriteLine("Result : " + Solution.FirstDuplicatePrimeiraSolucao(new int[] { 2, 1, 3, 5, 3, 2 }));
+            WriteLine("Result : " + Solution.FirstDuplicatePrimeiraSolucao(new int[] { 2, 1, 3, 5, 3, 2 }));
             WriteLine("Result : " + Solution.FirstDuplicateSegundaSolucao(new int[] { 2, 1, 3, 5, 3, 2 }));
 
             ReadKey();
@@ -49,7 +49,7 @@ namespace AmazonTest
             int menor_segundo_indice = -1;
 
             for (int i = 0; i < v.Length; i++) // o(n^2)
-                for (int j = i + 1; j < v.Length; j++)
+                for (int j = i + 1; j < v.Length; j++) // O(N)
                     if (v[i] == v[j])
                         if (menor_segundo_indice == -1 || j < menor_segundo_indice)
                             menor_segundo_indice = j; // aqui o menor valor recebe o J pois sempre será o segundo indice.                       
@@ -65,7 +65,7 @@ namespace AmazonTest
         }
 
 
-        public static int FirstDuplicateSegundaSolucao(int[] v)
+        public static int FirstDuplicateSegundaSolucao(int[] v) // O(N)
         {
             HashSet<int> ja_apareceram = new();
 
@@ -75,8 +75,6 @@ namespace AmazonTest
                     return v[i];
                 ja_apareceram.Add(v[i]);
             }
-
-
             return -1;
         }
 
