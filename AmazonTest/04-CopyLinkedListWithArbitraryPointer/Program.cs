@@ -46,7 +46,59 @@ namespace AmazonTest
 
         public static LinkedListNode Deep_Copy_Arbitrary_Pointer(LinkedListNode head)
         {
+            if (head == null) return null;
 
+            LinkedListNode current = head;
+            LinkedListNode new_head = null;
+            LinkedListNode new_prev = null;
+
+            Dictionary<int, LinkedListNode> map = new();
+
+
+
+            // create copy of the linked list, recording the corresponding
+            // nodes in hashmap without updating arbitrary pointer
+            while (current != null)
+            {
+                LinkedListNode new_node = new(current.arbitrary_pointer);
+
+
+
+                // copy the old arbitrary pointer in the new node
+                new_node.next = current.next;
+
+
+                if (new_prev != null)
+                {
+                    new_prev.next = new_node;
+                }
+                else
+                {
+                    new_head = new_node;
+                }
+
+                map.Add(current.arbitrary_pointer, new_node);
+
+                new_prev = new_node;
+                current = current.next;
+            }
+
+            LinkedListNode new_current = new_head;
+
+            // updating arbitrary_pointer
+            while (new_current != null)
+            {
+                if (new_current.next != null)
+                {
+                    LinkedListNode node = map[new_current.arbitrary_pointer];
+
+                    new_current.next = node;
+                }
+
+                new_current = new_current.next;
+            }
+
+            return new_head;
         }
 
         public static LinkedListNode ToLinkedListNode(int[] input)
@@ -68,9 +120,9 @@ namespace AmazonTest
     /// </summary>
     public class LinkedListNode
     {
-        public int data { get; set; }
+        public int arbitrary_pointer { get; set; }
         public LinkedListNode next { get; set; }
-        public LinkedListNode(int value) => data = value;
+        public LinkedListNode(int value) => arbitrary_pointer = value;
     }
 
 
