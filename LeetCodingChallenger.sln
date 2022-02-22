@@ -49,11 +49,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstDuplication", "AmazonT
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeetCode", "LeetCode", "{7118A2E3-CFCA-4E24-B271-E61494235046}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-MergeTwoSortedLinkedLists", "AmazonTest\3-MergeTwoSortedLinkedLists\3-MergeTwoSortedLinkedLists.csproj", "{94CDA653-441F-4F8E-86C1-695963ABD97F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-MergeTwoSortedLinkedLists", "AmazonTest\3-MergeTwoSortedLinkedLists\03-MergeTwoSortedLinkedLists.csproj", "{94CDA653-441F-4F8E-86C1-695963ABD97F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-FindTheMissingNumberInTheArray", "AmazonTest\01-FindTheMissingNumberInTheArray\01-FindTheMissingNumberInTheArray.csproj", "{464DA106-3D8E-4F28-8F3C-C1AC4C695FE8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-DetermineIfTheSumOfTwoIntegersIsEqualToTheGivenValue", "AmazonTest\02-DetermineIfTheSumOfTwoIntegersIsEqualToTheGivenValue\02-DetermineIfTheSumOfTwoIntegersIsEqualToTheGivenValue.csproj", "{C376C4A9-FB49-4FBE-B2AB-3E2D514177CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-CopyLinkedListWithArbitraryPointer", "AmazonTest\04-CopyLinkedListWithArbitraryPointer\04-CopyLinkedListWithArbitraryPointer.csproj", "{62152439-47F4-4FD1-B526-2CE83F919203}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -145,6 +147,10 @@ Global
 		{C376C4A9-FB49-4FBE-B2AB-3E2D514177CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C376C4A9-FB49-4FBE-B2AB-3E2D514177CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C376C4A9-FB49-4FBE-B2AB-3E2D514177CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62152439-47F4-4FD1-B526-2CE83F919203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62152439-47F4-4FD1-B526-2CE83F919203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62152439-47F4-4FD1-B526-2CE83F919203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62152439-47F4-4FD1-B526-2CE83F919203}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -174,6 +180,7 @@ Global
 		{94CDA653-441F-4F8E-86C1-695963ABD97F} = {C948B8EB-09B1-44AE-8F2F-9B469CCF3E89}
 		{464DA106-3D8E-4F28-8F3C-C1AC4C695FE8} = {C948B8EB-09B1-44AE-8F2F-9B469CCF3E89}
 		{C376C4A9-FB49-4FBE-B2AB-3E2D514177CC} = {C948B8EB-09B1-44AE-8F2F-9B469CCF3E89}
+		{62152439-47F4-4FD1-B526-2CE83F919203} = {C948B8EB-09B1-44AE-8F2F-9B469CCF3E89}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {668FBAF8-0760-44A0-AD46-B89040394F0F}
