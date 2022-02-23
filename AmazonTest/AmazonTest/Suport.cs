@@ -15,8 +15,8 @@ namespace AmazonTest
 
         public SinglyLinkedListNode(int nodeData)
         {
-            this.data = nodeData;
-            this.next = null;
+            data = nodeData;
+            next = null;
         }
     }
 
@@ -27,24 +27,24 @@ namespace AmazonTest
 
         public SinglyLinkedList()
         {
-            this.head = null;
-            this.tail = null;
+            head = null;
+            tail = null;
         }
 
         public void InsertNode(int nodeData)
         {
             SinglyLinkedListNode node = new SinglyLinkedListNode(nodeData);
 
-            if (this.head == null)
+            if (head == null)
             {
-                this.head = node;
+                head = node;
             }
             else
             {
-                this.tail.next = node;
+                tail.next = node;
             }
 
-            this.tail = node;
+            tail = node;
         }
     }
 
