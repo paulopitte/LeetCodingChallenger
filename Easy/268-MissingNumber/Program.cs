@@ -46,10 +46,10 @@ namespace _268_MissingNumber
            
             WriteLine("");
             WriteLine("+++++++++++++++++++++++++++++++++++++++");
-            WriteLine("Find Missing Number");
+            WriteLine("Find Missing Number [9, 6, 4, 2, 3, 5, 7, 0, 1] = expected: 8");
             WriteLine("---------------------------------------");
 
-            var random_array = new int[] { 3, 7, 1, 2, 8,  4, 5 };
+            var random_array = new int[] { 9, 6, 4, 2, 3, 5, 7, 0, 1 };
             var result = Solution.MissingNumber(random_array);
 
             WriteLine("actual missing is " + result);
@@ -70,7 +70,7 @@ namespace _268_MissingNumber
             int missing = 0;
 
             for (int index = 0; index < numbers.Length; index++)
-                missing += (numbers.Length - index - numbers[index]);
+                missing += ((numbers.Length - index) - numbers[index]);
 
             return missing;
         }

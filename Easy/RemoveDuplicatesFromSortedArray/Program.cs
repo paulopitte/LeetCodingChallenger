@@ -52,10 +52,12 @@ namespace RemoveDuplicatesFromSortedArray
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("26. Remove Duplicates from Sorted Array");
+            Console.WriteLine("26. Remove Duplicates from Sorted Array -> [0, 0, 1, 1, 1, 2, 2, 3, 3, 4] ");
 
             // result => 5
             var result = RemoveDuplicates(new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 });
+
+            Console.ReadLine();
 
         }
 
