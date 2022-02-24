@@ -53,12 +53,12 @@ namespace AmazonTest
         {
             WriteLine("");
             WriteLine("+++++++++++++++++++++++++++++++++++++++");
-            WriteLine("Subarray with given sum" + "[  1, 2, 3, 7, 5 ] Esperado => 12 ");
+            WriteLine("Subarray with given sum" + "[  1, 2, 3, 7, 5 ] Esperado = 12 ");
             WriteLine("---------------------------------------");
 
             // WriteLine("Result : " + Solution.SubarraySum_SOLUCTION_ONE(new int[] { 1, 2, 3, 7, 5 },  12));
             // WriteLine("Result : " + Solution.SubarraySum_SOLUCTION_TWO(new int[] { 1, 2, 3, 7, 5 }, 12));
-            // WriteLine("Result : " + Solution.SubarraySum_SOLUCTION_THREE(new int[] { 4, 2, 3, 7, 2, 4, 2 }, 13));
+             WriteLine("Result : " + Solution.SubarraySum_SOLUCTION_THREE(new int[] { 4, 2, 3, 7, 2, 4, 2 }, 13));
             WriteLine("Result : " + Solution.SubarraySum_SOLUCTION_FOUR(new int[] { 4, 2, 3, 7, 2, 4, 2 }, 13));
 
             ReadKey();
@@ -149,7 +149,7 @@ namespace AmazonTest
         public static bool SubarraySum_SOLUCTION_FOUR(int[] arr, int s)
         {
             int soma_atual = 0; // O(2N) == o(n)
-            int inicio = 0;
+            int inicio = 0; 
 
             for (int fim = 0; fim < arr.Length; fim++) // o(N)
             {
